@@ -1,0 +1,530 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/toshiba/ontologies/2022/11/AMBIENT_ASSIGNMENT_5197073"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/toshiba/ontologies/2022/11/AMBIENT_ASSIGNMENT_5197073">
+    <Prefix name="" IRI="http://www.semanticweb.org/toshiba/ontologies/2022/11/AMBIENT_ASSIGNMENT_5197073"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Objects"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OverSpeeding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Persons"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedLightVoilation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmartRoadSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StreetLight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TagID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#for_Emergency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#for_Normal_Trafic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#for_excessive_trafic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#trafic_Lights"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#zebraCrossing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasPushButton_timer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#LDR_sensor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#RGB_camera"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Road_side_sensors"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TimerZero_ON"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Timer_Excessive"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Timer_Normal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#accelerometer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#smart_tag"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#HasPushButton_Timer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#LDR"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#RDB_Camera"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TimerZero_ON"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Timer_Excessive"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Timer_Normal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#accelerometer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#smart_tag"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/TagID_121"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/TagID_212"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Always_green"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Car_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Car_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Less_Time_period"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Person_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Person_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PushButton_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PushButton_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ambulanza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#13_Vehicles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fine_$150"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Objects"/>
+        <Class IRI="#SmartRoadSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OverSpeeding"/>
+        <Class IRI="#fine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Persons"/>
+        <Class IRI="#Objects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedLightVoilation"/>
+        <Class IRI="#fine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StreetLight"/>
+        <Class IRI="#SmartRoadSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TagID"/>
+        <Class IRI="#Objects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fine"/>
+        <Class IRI="#SmartRoadSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#for_Emergency"/>
+        <Class IRI="#trafic_Lights"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#for_Normal_Trafic"/>
+        <Class IRI="#trafic_Lights"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#for_excessive_trafic"/>
+        <Class IRI="#trafic_Lights"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#trafic_Lights"/>
+        <Class IRI="#SmartRoadSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vehicle"/>
+        <Class IRI="#Objects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#zebraCrossing"/>
+        <Class IRI="#SmartRoadSystem"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#OverSpeeding"/>
+        <Class IRI="#zebraCrossing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Persons"/>
+        <Class IRI="#TagID"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Persons"/>
+        <Class IRI="#vehicle"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#StreetLight"/>
+        <Class IRI="#fine"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#StreetLight"/>
+        <Class IRI="#trafic_Lights"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#StreetLight"/>
+        <Class IRI="#zebraCrossing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#fine"/>
+        <Class IRI="#zebraCrossing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#for_Emergency"/>
+        <Class IRI="#for_Normal_Trafic"/>
+        <Class IRI="#for_excessive_trafic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#trafic_Lights"/>
+        <Class IRI="#zebraCrossing"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#TagID"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/TagID_121"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TagID"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/TagID_212"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#for_Emergency"/>
+        <NamedIndividual IRI="#Always_green"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#vehicle"/>
+        <NamedIndividual IRI="#Car_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#vehicle"/>
+        <NamedIndividual IRI="#Car_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#for_excessive_trafic"/>
+        <NamedIndividual IRI="#Less_Time_period"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Persons"/>
+        <NamedIndividual IRI="#Person_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Persons"/>
+        <NamedIndividual IRI="#Person_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#zebraCrossing"/>
+        <NamedIndividual IRI="#PushButton_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#vehicle"/>
+        <NamedIndividual IRI="#ambulanza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#vehicle"/>
+        <NamedIndividual IRI="#13_Vehicles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OverSpeeding"/>
+        <NamedIndividual IRI="#Fine_$150"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#smart_tag"/>
+        <NamedIndividual IRI="#Car_1"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/TagID_121"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#smart_tag"/>
+        <NamedIndividual IRI="#Car_2"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/TagID_212"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasPushButton_timer"/>
+        <NamedIndividual IRI="#Person_1"/>
+        <NamedIndividual IRI="#PushButton_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasPushButton_timer"/>
+        <NamedIndividual IRI="#Person_2"/>
+        <NamedIndividual IRI="#PushButton_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasPushButton_timer"/>
+        <NamedIndividual IRI="#PushButton_1"/>
+        <NamedIndividual IRI="#PushButton_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasPushButton_timer"/>
+        <NamedIndividual IRI="#PushButton_2"/>
+        <NamedIndividual IRI="#PushButton_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#TimerZero_ON"/>
+        <NamedIndividual IRI="#ambulanza"/>
+        <NamedIndividual IRI="#Always_green"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Timer_Excessive"/>
+        <NamedIndividual IRI="#13_Vehicles"/>
+        <NamedIndividual IRI="#Less_Time_period"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#accelerometer"/>
+        <NamedIndividual IRI="#Fine_$150"/>
+        <NamedIndividual IRI="#Car_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#smart_tag"/>
+        <NamedIndividual IRI="#Fine_$150"/>
+        <NamedIndividual IRI="http://purl.obolibrary.org/obo/TagID_212"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasPushButton_timer"/>
+        <ObjectProperty IRI="#Road_side_sensors"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#LDR_sensor"/>
+        <ObjectProperty IRI="#Road_side_sensors"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#RGB_camera"/>
+        <ObjectProperty IRI="#Road_side_sensors"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TimerZero_ON"/>
+        <ObjectProperty IRI="#RGB_camera"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Timer_Excessive"/>
+        <ObjectProperty IRI="#RGB_camera"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Timer_Normal"/>
+        <ObjectProperty IRI="#RGB_camera"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#accelerometer"/>
+        <ObjectProperty IRI="#Road_side_sensors"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#smart_tag"/>
+        <ObjectProperty IRI="#Road_side_sensors"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasPushButton_timer"/>
+        <Class IRI="#SmartRoadSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#LDR_sensor"/>
+        <Class IRI="#SmartRoadSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#RGB_camera"/>
+        <Class IRI="#fine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#TimerZero_ON"/>
+        <Class IRI="#trafic_Lights"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Timer_Excessive"/>
+        <Class IRI="#trafic_Lights"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Timer_Normal"/>
+        <Class IRI="#trafic_Lights"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#accelerometer"/>
+        <Class IRI="#SmartRoadSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#smart_tag"/>
+        <Class IRI="#Objects"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasPushButton_timer"/>
+        <Class IRI="#zebraCrossing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#LDR_sensor"/>
+        <Class IRI="#StreetLight"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#RGB_camera"/>
+        <Class IRI="#RedLightVoilation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#RGB_camera"/>
+        <Class IRI="#trafic_Lights"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#TimerZero_ON"/>
+        <Class IRI="#for_Emergency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Timer_Excessive"/>
+        <Class IRI="#for_excessive_trafic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Timer_Normal"/>
+        <Class IRI="#for_Normal_Trafic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#accelerometer"/>
+        <Class IRI="#fine"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#smart_tag"/>
+        <Class IRI="#fine"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TimerZero_ON"/>
+        <DataProperty IRI="#RDB_Camera"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Timer_Excessive"/>
+        <DataProperty IRI="#RDB_Camera"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Timer_Normal"/>
+        <DataProperty IRI="#RDB_Camera"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#HasPushButton_Timer"/>
+        <Class IRI="#zebraCrossing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#LDR"/>
+        <Class IRI="#fine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#RDB_Camera"/>
+        <Class IRI="#trafic_Lights"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TimerZero_ON"/>
+        <Class IRI="#for_Emergency"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Timer_Excessive"/>
+        <Class IRI="#for_excessive_trafic"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Timer_Normal"/>
+        <Class IRI="#for_Normal_Trafic"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#accelerometer"/>
+        <Class IRI="#OverSpeeding"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#smart_tag"/>
+        <Class IRI="#fine"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#HasPushButton_Timer"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#HasPushButton_Timer"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20.00</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#LDR"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#RDB_Camera"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TimerZero_ON"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TimerZero_ON"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Timer_Excessive"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Timer_Normal"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#accelerometer"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#smart_tag"/>
+        <Datatype abbreviatedIRI="xsd:NMTOKEN"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#smart_tag"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
